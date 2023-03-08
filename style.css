@@ -1,0 +1,361 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{ 
+    scroll-behavior: smooth; 
+} /* me permite deslizar cuando hago clic en los links del menu */
+/* MENU */
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+}
+.contenedor-header header{
+    max-width: 480px;
+    margin: auto;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header menu ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header menu ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header menu ul li a:hover{
+    color: #DE6449;
+}
+
+/* SECCION INICIO */
+.inicio{
+    background: linear-gradient(to top, rgba(222, 100, 73, 0.6), rgba(38, 49, 56,1)),
+    url(img/fondo.jpg);
+    background-size: cover;
+    height: 100vh; /* hace que la imagen ocupe el 100% de la pantalla*/
+    color: #AFBEA6;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenedor-banner{
+    padding: 0;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenedor-banner img{
+    border: 10px solid #AFBEA6;
+    display: block;
+    width: 80%;
+    margin: auto; 
+    margin-top: 50px;
+    border-radius: 100%;
+}
+.inicio .contenedor-banner h1{
+    margin-top: 30px;
+    font-size: 40px;
+    font-family: 'Patrick Hand SC';
+}
+.inicio .contenedor-banner h2{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .contenedor-banner .redes a{
+    color: #AFBEA6;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #AFBEA6;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 30px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenedor-banner .redes a:hover{
+    background-color: #DE6449;
+}
+
+/* SOBRE MI */
+.sobremi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Patrick Hand SC';
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span{
+    color: #DE6449;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .columna{
+    width: 50%;
+}
+.sobremi .fila .columna h3{
+    font-size: 28px;
+    font-family: 'Patrick Hand SC';
+    margin-bottom: 25px;
+}
+.sobremi .fila .columna ul{
+    list-style: none;
+}
+.sobremi .fila .columna ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .columna ul li strong{
+    display: inline-block;
+    color: #DE6449;
+    width: 130px;
+}
+.sobremi .fila .columna ul li span{
+    background-color: #DE6449;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.sobremi .fila .columna .contenedor-intereses{
+    display: flex;
+}
+.sobremi .fila .columna .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.sobremi .fila .columna .contenedor-intereses .interes:hover{
+    background-color: #DE6449;
+}
+.sobremi .fila .columna .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* ESTUDIOS */
+.estudios{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 80px 20px;
+}
+.estudios .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+}
+.estudios h2{
+    font-size: 48px;
+    font-family: 'Patrick Hand SC';
+    text-align: center;
+    padding: 20px 0;
+}
+.estudios .fila{
+    display: flex;
+    
+}
+.estudios .fila .columna .izquierda{
+    width: 50%;
+    padding: 0 20px;
+}
+.estudios .fila .izquierda{
+    border-right: 2px solid #252A2E;
+}
+.estudios .fila .derecha{
+    border-left: 2px solid #252A2E;
+}
+.estudios .fila .item{
+    padding: 25px;
+    background-color: #252A2E;
+    position: relative;
+}
+.estudios .fila .item h4{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.estudios .fila .item .titulo{
+    color: #DE6449;
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+}
+.estudios .fila .item .fecha{
+    display: block;
+    color: #DE6449;
+    margin-bottom: 10px;
+}
+.estudios .fila .izq{
+    border-right: 4px solid #DE6449;
+    margin-right: 20px;
+}
+.estudios .fila .der{
+    border-left: 4px solid #DE6449;
+    margin-left: 20px;
+}
+.estudios .fila .item .botones .columna{
+    display: flex;
+}
+.estudios .fila .item .botones p{
+    font-size: 20px;
+    padding: 0;
+    margin: 15px;
+    border: 0;
+}
+.estudios .fila .item .botones .demo{
+    color: #DE6449;
+    background-color: #1e2326;
+    border: none;
+    box-shadow: -1px 1px 6px 2px #de6449;
+    font-size: 20px;
+    
+    margin:  15px ;
+    padding: 5px 10px;   
+    transition: .3s; 
+}
+.estudios .fila .item .botones .demo:hover{
+    background-color: #fff;
+}
+
+
+/* CONTACTO */
+.contacto{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Patrick Hand SC';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .columna img{
+    width: 100%;
+}
+.contacto .columna .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .columna .info ul{
+    list-style: none;
+}
+.contacto .columna .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .columna .info ul li i{
+    color: #DE6449;
+    display: inline-block;
+    margin-right: 20px;
+}
+.contacto .columna{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .columna input, .contacto .columna textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 16px;
+}
+.contacto button{
+    background-color: transparent;
+    border: 2px solid #fff;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+footer{
+    background-color: #252A2E;
+    color: #F9DEC9;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #F9DEC9;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #F9DEC9;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .redes a:hover{
+    background-color: #DE6449;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #DE6449;
+    color: #F9DEC9;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+}

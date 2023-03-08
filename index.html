@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CV Aguirre Carolina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU -->
+    <div class="contenedor-header">
+        <header>
+            <menu>
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#estudios" onclick="seleccionar()">ESTUDIOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </menu>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenedor-banner">
+            <div class="contenedor-img">
+                <img src="img/mifoto.png" alt="">
+            </div>
+            <h1>CAROLINA AGUIRRE</h1>
+            <h2>Diseñadora Gráfica-Desarrolladora Web</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/carolina.aguirre.771/"  target="_blank">
+                    <i class="fa-brands fa-facebook-f" ></i>
+                </a>
+                <a href="https://twitter.com/1994Caguirre"  target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://github.com/ca941125" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/carolina-aguirre-b9546021a/"  target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/carolinaaguirre73/?hl=es-la" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SOBRE MI</h2>
+            <p><span>Hola, soy Carolina Aguirre.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti
+            repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+            <div class="fila">
+                <!-- DATOS PERSONALES -->
+                <div class="columna">
+                    <h3>DATOS PERSONALES</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            25-11-1994
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            xxx xxxxxxx
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            carolinaaguirre12@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            xxx Ucacha, Cba, Argentina
+                        </li>
+                        <li>
+                            <strong>Disponibilidad</strong>
+                            <span>TIEMPO COMPLETO</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- INTERESES -->
+                <div class="columna">
+                    <h3>INTERESES</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>                        
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- SECCION ESTUDIOS -->
+    <section id="estudios" class="estudios">
+        <div class="contenido-seccion">
+            <h2>ESTUDIOS</h2>
+            <div class="fila">
+                <div class="columna izquierda">
+                    <div class="item izq">
+                        <h4>Tecnicatura</h4>
+                        <span class="titulo">Diseño Gráfico-IES Clelia Fanny Castagnino</span>
+                        <span class="fecha">2020 - 2022</span>
+                        <h4>Cursos</h4>
+                        <span class="titulo">Ingles</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <span class="titulo">Desarrollo Front-End</span>
+                        <span class="fecha">2023 - 2023</span>
+                        <span class="titulo">Programación</span>
+                        <span class="fecha">2023 - 2023</span>
+                    </div>                   
+                </div>
+                <div class="columna derecha">
+                    <div class="item der">
+                        <h4>Programas</h4>   
+                        <div class="botones">
+                            <div class="columna 1">
+                                <button class="demo" id="boton_Illustrator">Adobe Illustrator</button> 
+                                <p id="porcentaje1" > 0 %</p>   
+                            </div>
+                            <div class="columna 2">
+                                <button class="demo" id="boton_Photoshop">Adobe Photoshop</button>
+                                <p id="porcentaje2" > 0 %</p>
+                            </div>
+                            <div class="columna 3">
+                                <button class="demo" id="boton_InDesign">Adobe InDesign</button>
+                                <p id="porcentaje3" > 0 %</p>
+                            </div>
+                            <div class="columna 4">
+                                <button class="demo" id="boton_Corel">Corel DRAW</button>
+                                <p id="porcentaje4" > 0 %</p>
+                            </div>
+                            
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Mapa -->
+                <div class="columna">
+                    <img src="img/ubicacion.png" alt="mapa">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                N. Avellaneda, Córdoba
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                xxx - xxxxxxx 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                ca@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Formulario -->
+                <div class="columna">
+                    <form id="formulario" class="formulario">
+                        <input type="text" placeholder="Tú Nombre">
+                        <input type="text" placeholder="Dirección de correo">
+                        <input type="text" placeholder="Tema">
+                        <textarea  cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <input type="submit" value="enviar mensaje" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/carolina.aguirre.771/"  target="_blank">
+                    <i class="fa-brands fa-facebook-f" ></i>
+                </a>
+                <a href="https://twitter.com/1994Caguirre"  target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://github.com/ca941125" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/carolina-aguirre-b9546021a/"  target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/carolinaaguirre73/?hl=es-la" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
